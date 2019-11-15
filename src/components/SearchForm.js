@@ -3,6 +3,7 @@ import axios from'axios';
 import { Link } from'react-router-dom';
 import CharacterCard from'./CharacterCard';
 
+
 function SearchForm(props) {
  const [data, setData] = useState([]);
  const [query, setQuery] = useState('');
@@ -20,16 +21,6 @@ setData(toons)
  const handleInputChange = e =>{
     setQuery(e.target.value);
  };
-
-//  const submitHandler = e =>{
-//    e.preventDefault();
-//  }
-
-// const filtered = props.characters.filter(character => {
-//   return character.name.toLowerCase().indexOf(data.toLowerCase()) !== -1;
-// })
-// props.search(filtered);
-// console.log(filtered);
 
  return (
     <section className="search-form">

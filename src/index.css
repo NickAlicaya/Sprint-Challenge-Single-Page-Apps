@@ -14,11 +14,11 @@ main {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-.grid-view {
+/* .grid-view {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
+} */
 
 .page-view {
   min-height: 40vh;
@@ -36,4 +36,26 @@ main {
 
 header h1 {
   text-align: center;
+}
+
+button {
+  background:salmon;
+  background-image: linear-gradient(-315deg, salmon 40%,salmon 100%);
+  border: 1px solid silver;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight:bold;
+  color: #191919;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12), 0 2px 2px 1px rgba(0, 0, 0, 0.24);
+  transition: all 0.2 ease-in;
+}
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.12), 0 2px 3px 2px rgba(0, 0, 0, 0.24);
+  background: lightblue;
+}
+button:active {
+  background: #ff7eb9;
+          box-shadow: inset 0px 0px 5px #ff65a3;
+   outline: none;
 }

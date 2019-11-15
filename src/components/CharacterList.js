@@ -2,6 +2,7 @@ import React,{ useState, useEffect } from'react';
 import axios from'axios';
 import { Link } from'react-router-dom';
 import CharacterCard from'./CharacterCard';
+import { Container, Row } from 'reactstrap';
 
 function CharacterList (){
 
@@ -22,23 +23,26 @@ console.log(err)
 
 
 return (
-    <section className='character-list'>
-      <h2>Character List</h2>
-      <Link to = '/'><button>Home</button></Link>
- 
-      {characters.map(char  => (
+  <>
+  <h2>Character List</h2>
+        <Link to = '/'><button>Home</button></Link>
         
-        <CharacterCard  
-        image={char.image}
-        key={char.id} 
-        name={char.name}
-        species={char.species}
-        gender={char.gender}
-        status={char.status}
-        />
-        )
-      )}
-    </section>
+  <Container fluid>
+      <Row>
+       {characters.map(char  => (
+          <CharacterCard  
+          image={char.image}
+          key={char.id} 
+          name={char.name}
+          species={char.species}
+          gender={char.gender}
+          status={char.status}
+          />
+          )
+        )}
+      </Row>
+  </Container>
+  </>
   )
 }
 export default CharacterList
