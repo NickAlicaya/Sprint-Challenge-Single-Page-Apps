@@ -28,7 +28,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ]  Explain benefit(s) using `client-side routing`?
 
 > Answer:
-
+Client side routing makes navigation through your website faster and more efficient because it uses JS to manipulate the data from the API that has been saved in state. The website would require less API interaction with a server. The developer also have more control over the website is less dependent on server response for API. From the users perspective the page wouldn't refresh as much creating a smoother interaction with the app/website.
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
